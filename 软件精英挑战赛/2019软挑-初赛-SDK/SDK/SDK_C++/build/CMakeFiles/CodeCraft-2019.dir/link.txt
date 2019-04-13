@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -O3 -Wall -std=c++11 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/CodeCraft-2019.dir/CodeCraft-2019.cpp.o  -o /Users/apple/Desktop/软件精英挑战赛/2019软挑-初赛-SDK/SDK/SDK_C++/bin/CodeCraft-2019 

@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+/Users/apple/Desktop/软件精英挑战赛/.metadata/.plugins/org.eclipse.jdt.core
+3146584463.index

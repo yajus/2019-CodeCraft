@@ -1,0 +1,58 @@
+package com.huawei;
+import org.apache.log4j.Logger;
+public class Main {
+    private static final Logger logger = Logger.getLogger(Main.class);
+    public static void main(String[] args)
+    {
+//        if (args.length != 4) {
+//            logger.error("please input args: inputFilePath, resultFilePath");
+//            return;
+//        }
+//
+//        logger.info("Start...");
+//
+//        String carPath = args[0];
+//        String roadPath = args[1];
+//        String crossPath = args[2];
+//        String answerPath = args[3];
+//        logger.info("carPath = " + carPath + " roadPath = " + roadPath + " crossPath = " + crossPath + " and answerPath = " + answerPath);
+//
+//        // TODO:read input files
+//        logger.info("start read input files");
+//
+//        // TODO: calc
+//
+//        // TODO: write answer.txt
+//        logger.info("Start write output file");
+//
+//        logger.info("End...");
+    	Graph g=new Graph();
+    	GraphByMatrix graph = new GraphByMatrix(Graph.UNDIRECTED_GRAPH, Graph.ADJACENCY_MATRIX, 6);
+    	 
+        graph.addVertex("1");
+        graph.addVertex("2");
+        graph.addVertex("3");
+        graph.addVertex("4");
+        graph.addVertex("5");
+        graph.addVertex("6");
+ 
+        graph.addEdge(0, 1,7);
+        graph.addEdge(0, 2,9);
+        graph.addEdge(0, 5,14);
+ 
+        graph.addEdge(1, 3,15);
+        graph.addEdge(1, 2,10);
+ 
+        graph.addEdge(2, 3,11);
+        graph.addEdge(2, 5,2);
+ 
+        graph.addEdge(3, 4,6);
+        graph.addEdge(4, 5,9);
+ 
+        graph.Dijkstra(0);
+        System.out.println();
+        graph.Dijkstra("1");
+        System.out.println();
+        graph.Dijkstra2(0);
+    }
+}
